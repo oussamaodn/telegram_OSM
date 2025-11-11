@@ -9,7 +9,7 @@ import os
 
 # ===== إعداد البوت =====
 BOT_TOKEN = os.environ.get('BOT_TOKEN', '8595026017:AAGtIq5yu8zbvTquQKx1aTzsPlzjQvuAoJo')
-ADMIN_ID = '1779449528'
+ADMIN_ID = ['1779449528','5738232749']
 bot = telebot.TeleBot(BOT_TOKEN)
 
 CSV_FILE = 'subscribers.csv'
@@ -270,4 +270,5 @@ def search_subscriber(message):
 # ===== تشغيل البوت =====
 if __name__ == "__main__":
     print("🚀 البوت بدأ العمل...")
+
     bot.infinity_polling(timeout=10, long_polling_timeout=5)
